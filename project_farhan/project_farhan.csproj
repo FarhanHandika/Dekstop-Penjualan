@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A263C2D3-6BA1-4CF4-99E6-F9BC6210CC99}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>project_farhan</RootNamespace>
+    <AssemblyName>project_farhan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db.cs" />
+    <Compile Include="dialogmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogmenu.Designer.cs">
+      <DependentUpon>dialogmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogPetugas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogPetugas.Designer.cs">
+      <DependentUpon>DialogPetugas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fdasboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fdasboard.Designer.cs">
+      <DependentUpon>Fdasboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fdetailmenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fdetailmenu.Designer.cs">
+      <DependentUpon>Fdetailmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fmenu.Designer.cs">
+      <DependentUpon>Fmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fpetugas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fpetugas.Designer.cs">
+      <DependentUpon>fpetugas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ftest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ftest.Designer.cs">
+      <DependentUpon>Ftest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ftransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ftransaksi.Designer.cs">
+      <DependentUpon>Ftransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kf.cs" />
+    <Compile Include="MenuKeranjang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuKeranjang.Designer.cs">
+      <DependentUpon>MenuKeranjang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dialogmenu.resx">
+      <DependentUpon>dialogmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogPetugas.resx">
+      <DependentUpon>DialogPetugas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fdasboard.resx">
+      <DependentUpon>Fdasboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fdetailmenu.resx">
+      <DependentUpon>Fdetailmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fmenu.resx">
+      <DependentUpon>Fmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fpetugas.resx">
+      <DependentUpon>fpetugas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ftest.resx">
+      <DependentUpon>Ftest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ftransaksi.resx">
+      <DependentUpon>Ftransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuKeranjang.resx">
+      <DependentUpon>MenuKeranjang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minuman5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minuman51.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
